@@ -41,6 +41,10 @@
                             <input v-model="filterText" value="Kitchen Planning" id="radio-5" type="radio" name="radio">
                             <label for="radio-5">Kitchen Planning</label>
                         </div>
+                        <div class="form_radio_btn">
+                            <input v-model="filterText" value="Bedroom" id="radio-2" type="radio" name="radio">
+                            <label for="radio-2">Bedroom</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,45 +56,45 @@
 export default {
     data() {
         return {
-            filterText:'',
-            articles:[
+            filterText: '',
+            articles: [
                 {
-                    header:'Let’s Get Solution for Building Construction Work',
-                    tags:'Kitchen',
-                    text:'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
-                    img:'../assets/PhotoArticle2.jpg'
+                    header: 'Let’s Get Solution for Building Construction Work',
+                    tags: 'Kitchen',
+                    text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                    img: require('../assets/PhotoArticle2.jpg')
 
                 },
                 {
-                    header:'Design sprints are great',
-                    tags:'Bedroom',
-                    text:'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            ',
-                    img:'../assets/PhotoArticle.jpg'
-                },       
+                    header: 'Design sprints are great',
+                    tags: 'Bedroom',
+                    text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            ',
+                    img: require('../assets/PhotoArticle.jpg')
+                },
                 {
-                    header:'Follow Our Projects',
-                    tags:'Building',
-                    text:'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
-                    img:'../assets/PhotoArticle2.jpg'
-                },       
+                    header: 'Follow Our Projects',
+                    tags: 'Building',
+                    text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
+                    img: require('../assets/PhotoArticle2.jpg')
+                },
                 {
-                    header:'Articles & News',
-                    tags:'Architecture',
-                    text:'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
-                    img:'../assets/PhotoArticle.jpg'
-                },       
+                    header: 'Articles & News',
+                    tags: 'Architecture',
+                    text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
+                    img: require('../assets/PhotoArticle.jpg')
+                },
                 {
-                    header:'Latest Post',
-                    tags:'Kitchen Planning',
-                    text:'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
-                    img:'../assets/PhotoArticle2.jpg'
-                },              
+                    header: 'Latest Post',
+                    tags: 'Kitchen Planning',
+                    text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which dont look even slightly believable.                            Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto delectus alias voluptas, temporibus, nobis non error, eveniet voluptate numquam provident corrupti exercitationem maxime ad quidem consequatur animi culpa totam.',
+                    img: require('../assets/PhotoArticle2.jpg')
+                },
             ],
         }
     },
     computed: {
-        filterArticles(){
-            return this.articles.filter(article=>article.tags.includes(this.filterText))
+        filterArticles() {
+            return this.articles.filter(article => article.tags.includes(this.filterText))
         },
     },
 }
@@ -109,6 +113,8 @@ export default {
 
 .blogDetails__block__articles {
     width: 800px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .blogDetails__block__articles__header {
@@ -120,6 +126,7 @@ export default {
     line-height: 125%;
     /* 62.5px */
     letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .blogDetails__block__articles__img {
@@ -139,6 +146,7 @@ export default {
     line-height: 150%;
     /* 33px */
     letter-spacing: 0.22px;
+    margin-bottom: 0;
 }
 
 .blogDetails__block__tags__header {
@@ -161,7 +169,7 @@ export default {
 
 .form_radio_btn {
     display: inline-block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .form_radio_btn input[type=radio] {
@@ -214,4 +222,5 @@ export default {
     color: #666;
 }
 
-/*# sourceMappingURL=style.css.map */</style>
+/*# sourceMappingURL=style.css.map */
+</style>

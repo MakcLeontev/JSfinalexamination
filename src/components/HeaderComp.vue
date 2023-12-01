@@ -1,6 +1,6 @@
 <template lang="">
    <header class="header center">
-        <img class="header__logo" src="../assets/Logo.png" alt="logo">
+        <a href="/"><img class="header__logo" src="../assets/Logo.png" alt="logo"></a>
         <div class="header__menu">
             <nav class="header__menu">
                 <router-link class="header__menu__item" to="/">Home</router-link> 

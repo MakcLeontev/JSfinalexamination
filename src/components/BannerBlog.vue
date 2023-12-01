@@ -43,7 +43,7 @@ export default {
   padding: 41px 78px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   border-radius: 37px 37px 0px 0px;
   background: #FFF;
 }
@@ -54,6 +54,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 62.5px */
+  margin-bottom: 0;
 }
 .bannerBlog__banner__text__par {
   color: #4D5053;
@@ -63,5 +64,6 @@ export default {
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
+  margin-bottom: 0;
 }
 </style>

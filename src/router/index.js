@@ -5,6 +5,7 @@ import NotFound from '../views/NotFound.vue'
 import ProjectDetailsview from '../views/ProjectDetailsview.vue'
 import BlogDetails from '../views/BlogDetails.vue'
 
+
 const routes = [
   {
     path: '/',
@@ -48,6 +49,7 @@ const routes = [
     name: 'BlogDetails',
     component: BlogDetails
   },
+ 
 ]
 
 const router = createRouter({
